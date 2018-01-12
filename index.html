@@ -1,22 +1,163 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Track Suggester</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Which Programming track should you consider?</h1>
-
-      
-
-
-
-
-
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Track Suggester</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+      </div>
+      <div class="col-lg-6">
+        <div class="panel">
+          <h1>Which Programming track should you consider?</h1>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <label for="name"><h3>Please enter your name:</h3></label>
+          </div>
+          <div class="panel-body">
+            <input id="name" class="form-control" type="text">
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Would you prefer front or backend development?</h3>
+          </div>
+          <div class="panel-body">
+            <select class="form-control" id="type">
+              <option>Front end</option>
+              <option>Back end</option>
+            </select>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>What language interests you?</h3>
+          </div>
+          <div class="panel-body">
+            <div class="radio">
+              <label>
+                <input type="radio" name="language" value="cSharp"> C#/.NET
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="language" value="java"> Java
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="language" value="ruby"> Ruby/ Rails
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="language" value="php"> PHP
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="language" value="css"> CSS/ Design
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>What would your desired task be once you finish your track?</h3>
+          </div>
+          <div class="panel-body">
+            <div class="radio">
+              <label>
+                <input type="radio" name="task" value="css"> Create and design layouts
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="task" value="ruby"> Create interactive web apps
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="task" value="cSharp"> Create internal software for businesses
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="task" value="php"> Create content heavy web pages
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="task" value="java"> Create Android UI
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>What would be your ideal work environment?</h3>
+          </div>
+          <div class="panel-body">
+            <div class="radio">
+              <label>
+                <input type="radio" name="environment" value="java cSharp php css"> a big enterprise company
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="environment" value="cSharp php css"> a government agency
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="environment" value="ruby css"> a small start-up company
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Out of the four companies below, which would you prefer to work at?</h3>
+          </div>
+          <div class="panel-body">
+            <div class="radio">
+              <label>
+                <input type="radio" name="workPlace" value="php css"> Intel
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="workPlace" value="ruby css"> Living Social
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="workPlace" value="java css"> Nike
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="workPlace" value="cSharp css"> Microsoft
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
+    <div class="col-lg-3">
+    </div>
+  </div>
+
+
+
+
+
+</div>
+</body>
 </html>
