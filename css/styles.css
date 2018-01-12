@@ -1,0 +1,28 @@
+body{
+  background-color: #295F4E;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 20px;
+}
+.jumbotron{
+  background-color: #F4E5C2;
+  padding-top:10px;
+  padding-bottom: 10px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  border: 4px outset #808B97;
+  text-align: center;
+}
+.panel-body{
+  background-color: #6DB193;
+  border: 4px inset #808B97;
+}
+
+.panel-default .panel-heading{
+padding-top: 6px;
+padding-bottom: 0px;
+background-color: #F4E5C2;
+border: 2px groove #323232;
+}
+h3{
+  margin-top: 0px;
+}
