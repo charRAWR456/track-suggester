@@ -29,10 +29,16 @@
             <h3>Would you prefer front or backend development?</h3>
           </div>
           <div class="panel-body">
-            <select class="form-control" id="type">
-              <option>Front end</option>
-              <option>Back end</option>
-            </select>
+            <div class="radio">
+              <label>
+                <input type="radio" name="type" value="css"> Front End
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="type" value="java cSharp php ruby"> Back End
+              </label>
+            </div>
           </div>
         </div>
         <div class="panel panel-default">
@@ -150,7 +156,7 @@
         </div>
       </div>
     </div>
-    <button type="submit" class="btn">Submit</button>
+   <button class="btn btn-primary btn-lg center-block" id="submit-button">Submit</button>
   </form>
     <div class="col-lg-3">
     </div>
