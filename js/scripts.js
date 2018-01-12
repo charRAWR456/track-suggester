@@ -7,30 +7,18 @@ $(document).ready(function(){
     var php = 0;
     var ruby = 0;
     var name =$("#name").val();
+    var type = $("#type").val();
 
-  if ($("input:radio[name=type]:checked").val() == "cSharp") {
-    cSharp += 1;
-  } else if($("input:radio[name=type]:checked").val() == "java") {
-    java += 1;
-  } else if($("input:radio[name=type]:checked").val() == "css") {
-    css += 1;
-  }  else if ($("input:radio[name=type]:checked").val() == "php") {
-    php += 1;
-  } else if ($("input:radio[name=type]:checked").val() == "ruby") {
-    ruby += 1;
-  }
 
-  if ($("input:radio[name=language]:checked").val() == "cSharp") {
-    cSharp += 1;
-  } else if($("input:radio[name=language]:checked").val() == "java") {
-    java += 1;
-  } else if($("input:radio[name=language]:checked").val() == "css") {
-    css += 1;
-  }  else if ($("input:radio[name=language]:checked").val() == "php") {
-    php += 1;
-  } else if ($("input:radio[name=language]:checked").val() == "ruby") {
-    ruby += 1;
-  }
+    if (type == "frontEnd"){
+      css+=1;
+    }
+    else {
+      cSharp += 1;
+      java += 1;
+      php += 1;
+      ruby += 1;
+    }
 
   if ($("input:radio[name=language]:checked").val() == "cSharp") {
     cSharp += 1;
@@ -80,6 +68,6 @@ $(document).ready(function(){
     ruby += 1;
   }
 
-  alert("Hi "+ name+"! based off your answers you should take"+ " cSharp = " + cSharp + " java = " + java + " CSS = " + css + "PHP = " + php + " ruby = " + ruby)
+  alert("Hi "+ name+"! based off your answers you should take"+ " cSharp = " + cSharp + " java = " + java + " CSS = " + css + " PHP = " + php + " ruby = " + ruby)
 });
 });
