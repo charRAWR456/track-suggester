@@ -44,28 +44,32 @@ $(document).ready(function(){
     ruby += 1;
   }
 
-  if ($("input:radio[name=environment]:checked").val() == "cSharp") {
-    cSharp += 1;
-  } else if($("input:radio[name=environment]:checked").val() == "java") {
+  if ($("input:radio[name=environment]:checked").val() == "enterprise") {
     java += 1;
-  } else if($("input:radio[name=environment]:checked").val() == "css") {
-    css += 1;
-  } else if ($("input:radio[name=environment]:checked").val() == "php") {
+    cSharp += 1;
     php += 1;
-  } else if ($("input:radio[name=environment]:checked").val() == "ruby") {
+    css += 1;
+  } else if($("input:radio[name=environment]:checked").val() == "government") {
+    cSharp += 1;
+    php += 1;
+    css += 1;
+  } else if($("input:radio[name=environment]:checked").val() == "startUp") {
     ruby += 1;
-  }
+    css += 1;
+  } 
 
-  if ($("input:radio[name=workPlace]:checked").val() == "cSharp") {
-    cSharp += 1;
-  } else if($("input:radio[name=workPlace]:checked").val() == "java") {
-    java += 1;
-  } else if($("input:radio[name=workPlace]:checked").val() == "css") {
-    css += 1;
-  } else if ($("input:radio[name=workPlace]:checked").val() == "php") {
+  if ($("input:radio[name=workPlace]:checked").val() == "intel") {
     php += 1;
-  } else if ($("input:radio[name=workPlace]:checked").val() == "ruby") {
-    ruby += 1;
+    css += 1;
+  } else if($("input:radio[name=workPlace]:checked").val() == "livingSocial") {
+    ruby =+ 1;
+    css += 1;
+  } else if($("input:radio[name=workPlace]:checked").val() == "nike") {
+    java += 1;
+    css += 1;
+  } else if ($("input:radio[name=workPlace]:checked").val() == "microsoft") {
+    cSharp += 1;
+    css += 1;
   }
 
   alert("Hi "+ name+"! based off your answers you should take"+ " cSharp = " + cSharp + " java = " + java + " CSS = " + css + " PHP = " + php + " ruby = " + ruby)
