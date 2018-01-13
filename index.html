@@ -10,159 +10,158 @@
 <body>
   <div class="container">
     <div class="row">
-
-      <div class="col-offset-6 centered">
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6 centered">
         <div class="jumbotron">
           <h2>Which Programming track should you consider?</h2>
           <p>Answer the below questions to find out!</p>
+          <button class="btn btn-primary btn-lg center-block" id="start-button">Start Quiz</button>
         </div>
-      <form id="purchase">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <label for="name"><h3>Please enter your name:</h3></label>
-          </div>
-          <div class="panel-body">
-            <input id="name" class="form-control" type="text">
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3>Would you prefer front or backend development?</h3>
-          </div>
-          <div class="panel-body">
-            <select class="form-control" id="type">
-              <option value="frontEnd">Front end</option>
-              <option value="backEnd">Back end</option>
-            </select>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3>What language interests you?</h3>
-          </div>
-          <div class="panel-body">
-            <div class="radio">
-              <label>
-                <input type="radio" name="language" value="cSharp"> C#/.NET
-              </label>
+        <form id="survey">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <label for="name"><h3>Please enter your name:</h3></label>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="language" value="java"> Java/Android
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="language" value="ruby"> Ruby/Rails
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="language" value="php"> PHP/Drupal
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="language" value="css"> CSS/Design
-              </label>
+            <div class="panel-body">
+              <input id="name" class="form-control" type="text">
             </div>
           </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3>What would your desired task be once you finish your track?</h3>
-          </div>
-          <div class="panel-body">
-            <div class="radio">
-              <label>
-                <input type="radio" name="task" value="css"> Create and design layouts
-              </label>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>Would you prefer front or backend development?</h3>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="task" value="ruby"> Create interactive web apps
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="task" value="cSharp"> Create internal software for businesses
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="task" value="php"> Create content heavy web pages
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="task" value="java"> Create Android UI
-              </label>
+            <div class="panel-body">
+              <select class="form-control" id="type">
+                <option value="frontEnd">Front end</option>
+                <option value="backEnd">Back end</option>
+              </select>
             </div>
           </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3>What would be your ideal work environment?</h3>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>What language interests you?</h3>
+            </div>
+            <div class="panel-body">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="language" value="cSharp"> C#/.NET
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="language" value="java"> Java/Android
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="language" value="ruby"> Ruby/Rails
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="language" value="php"> PHP/Drupal
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="language" value="css"> CSS/Design
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="panel-body">
-            <div class="radio">
-              <label>
-                <input type="radio" name="environment" value="enterprise"> a big enterprise company
-              </label>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>What would your desired task be once you finish your track?</h3>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="environment" value="government"> a government agency
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="environment" value="startUp"> a small start-up company
-              </label>
+            <div class="panel-body">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="task" value="css"> Create and design layouts
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="task" value="ruby"> Create interactive web apps
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="task" value="cSharp"> Create internal software for businesses
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="task" value="php"> Create content heavy web pages
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="task" value="java"> Create Android UI
+                </label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3>Out of the four companies below, which would you prefer to work at?</h3>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>What would be your ideal work environment?</h3>
+            </div>
+            <div class="panel-body">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="environment" value="enterprise"> a big enterprise company
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="environment" value="government"> a government agency
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="environment" value="startUp"> a small start-up company
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="panel-body">
-            <div class="radio">
-              <label>
-                <input type="radio" name="workPlace" value="intel"> Intel
-              </label>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>Out of the four companies below, which would you prefer to work at?</h3>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="workPlace" value="livingSocial"> Living Social
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="workPlace" value="nike"> Nike
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="workPlace" value="microsoft"> Microsoft
-              </label>
+            <div class="panel-body">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="workPlace" value="intel"> Intel
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="workPlace" value="livingSocial"> Living Social
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="workPlace" value="nike"> Nike
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="workPlace" value="microsoft"> Microsoft
+                </label>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-   <button class="btn btn-primary btn-lg center-block" id="submit-button">Submit</button>
-  </form>
+      <button class="btn btn-primary btn-lg center-block" id="submit-button">Submit</button>
+    </form>
     <div class="col-lg-3">
     </div>
   </div>
   <div class="row centered-form center-block">
-
   </div>
-
-
-
-
+  <div class="col-md-3">
+  </div>
 </div>
 </body>
 </html>

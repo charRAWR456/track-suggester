@@ -1,4 +1,9 @@
 $(document).ready(function(){
+  $("#start-button").click(function() {
+    $("#survey").show();
+    $("#submit-button").show();
+    $("#start-button").hide();
+  });
 
   $("#submit-button").click(function() {
     var cSharp = 0;
@@ -84,9 +89,5 @@ $(document).ready(function(){
     else{
       alert("Hi "+ name+"! based off your answers you should take the CSS/Design track!" );
     }
-
-
-    alert("Hi "+ name+"! based off your answers you should take"+ " cSharp = " + cSharp + " java = " + java + " CSS = " + css + " PHP = " + php + " ruby = " + ruby)
-    });
-
   });
+});

@@ -18,11 +18,18 @@ body{
 }
 
 .panel-default .panel-heading{
-padding-top: 6px;
-padding-bottom: 0px;
-background-color: #F4E5C2;
-border: 2px groove #323232;
+  padding-top: 6px;
+  padding-bottom: 0px;
+  background-color: #F4E5C2;
+  border: 2px groove #323232;
 }
 h3{
   margin-top: 0px;
+}
+#survey{
+  display: none;
+}
+
+#submit-button{
+  display: none;
 }
